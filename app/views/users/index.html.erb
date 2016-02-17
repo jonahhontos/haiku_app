@@ -1,5 +1,5 @@
 <h1>All Users</h1>
-<% @user.each do |u| %>
+<% @users.each do |u| %>
 <h2><%= link_to u.username, user_path(u) %></h2>
 <p>Haikus: <%= u.haikus.count %></p>
 <% end %>

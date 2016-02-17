@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'haikus/index'
+
+  get 'haikus/show'
+
   get 'users' => 'users#index'
 
   get 'users/show/:id' => 'users#show', as: :user
