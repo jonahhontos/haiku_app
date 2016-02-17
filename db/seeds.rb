@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+User.create([{username:"bobert"},{username:"stoven"},{username:"slartibartfast"}])
+User.first.haikus.create({title:"one",body:"5 7 5"})
+User.second.haikus.create({title:"two",body:"booooooo"})
