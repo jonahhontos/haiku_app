@@ -1,2 +1,4 @@
-<h1>Haikus#show</h1>
-<p>Find me in app/views/haikus/show.html.erb</p>
+<h1><%= @haiku.title %></h1>
+<h2><%= link_to @haiku.user.username, user_path(@haiku.user) %></h2>
+<p><%= @haiku.body %></p>
+<%= link_to "Back", haikus_path %>
