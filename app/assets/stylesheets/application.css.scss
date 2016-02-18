@@ -17,13 +17,33 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+@font-face {
+  font-family: domo;
+  src: font-url('domo.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: shogun;
+  src: font-url('shogun.ttf') format("truetype");
+}
+
  body {
    background-image: url("http://wallpapercave.com/wp/nnifQOA.jpg");
    background-size: cover;
+  //  font-size: larger;
  }
+
+h1,h2,h3,.btn{
+  font-family: domo;
+}
+
+p {
+  font-family: sans-serif;
+}
 
 .container {
   background-color: #DDD;
   opacity: 0.9;
   min-height: 100%;
+  padding-bottom: 15px;
 }
