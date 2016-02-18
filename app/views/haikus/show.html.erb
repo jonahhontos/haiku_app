@@ -1,4 +1,4 @@
 <h1><%= @haiku.title %></h1>
 <h2><%= link_to @haiku.user.username, user_path(@haiku.user) %></h2>
 <p><%= @haiku.body %></p>
-<%= link_to "Back", haikus_path %>
+<%= link_to "Back", haikus_path, :class => "btn btn-default" %>
