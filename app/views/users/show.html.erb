@@ -3,6 +3,7 @@
   <h3><%= h.title %></h3>
   <p><%= h.body %></p>
 <% end %>
+<%= link_to "New Haiku", new_haiku_path + '/' + @user.id.to_s, :class => "btn btn-default" %>
 <hr>
 <%= link_to "Edit User", edit_user_path(@user), :class => "btn btn-default" %>
 <%= link_to "Delete User", destroy_user_path(@user), method: :delete, data: {confirm: "Really?"}, :class => "btn btn-default" %>

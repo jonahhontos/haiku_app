@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   get 'haikus' => 'haikus#index'
+  get 'haikus/new' => 'haikus#new', as: :new_haiku
+  get 'haikus/new/:id' => 'haikus#new'
   get 'haikus/:id' => 'haikus#show', as: :haiku
+  post 'haikus' => 'haikus#create'
 
-  get 'haikus/show'
 
   get 'users' => 'users#index'
   get 'users/new' => 'users#new', as: :new_user
