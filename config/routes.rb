@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'users#index'
+
   get 'haikus' => 'haikus#index'
   get 'haikus/new' => 'haikus#new', as: :new_haiku
   get 'haikus/new/:id' => 'haikus#new'
